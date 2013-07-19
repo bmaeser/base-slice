@@ -1,0 +1,15 @@
+# faster navigation:
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~"
+alias -- -="cd -"
+
+## better directoy listing:
+
+alias ll="ls -l"
+alias la="ls -la"
+alias lh="ls -lh"
+alias lah="ls -lah"
