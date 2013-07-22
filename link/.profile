@@ -4,28 +4,15 @@
 ##  zsh and bash read this
 ##
 ##  stuff to put in here: everything i want EVERYWHERE, in all shells,
-##  e.g. exports, path, aliases, enviroment-variables, rvm-stuff, 
-##  virtualenv(-wrapper)
+##  e.g. aliases, rvm-stuff,  virtualenv(-wrapper)
 ##  source other files, that are not specifiv to a particular shell
 ##
 ##############################################################################
 
-
-
-##  BASE SLICE
-##############################################################################
-
-
-
-##  ENVIROMENT
-###########################
-
-## $HOME/bin should be on $PATH :)
-export PATH="~/bin:$PATH"
-
-# Make vim the default editor
-export EDITOR="vim"
-
+## source .env
+if [ -f ~/.env ]; then
+   source ~/.env
+fi
 
 
 ##  ALIAS
@@ -75,7 +62,6 @@ alias :qa='exit'
 alias v='vim'
 
 
-
 ##  virtualenvwrapper
 ###########################
 
@@ -91,18 +77,6 @@ fi
 ##############################################################################
 
 ## TODO: MOVE THIS IN OSX SLICE !!!
-
-##  ENVIROMENT
-###########################
-
-## homebrew binaries in front of $PATH
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-
-## brew-installed GNU core utilities
-if [ -d "$(brew --prefix coreutils)/libexec/gnubin" ]; then
-  export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-fi
-
 
 
 ##  ALIAS
