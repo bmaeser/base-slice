@@ -11,11 +11,6 @@
 ##
 ##############################################################################
 
-
-
-##  BASE SLICE
-##############################################################################
-
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -26,7 +21,7 @@ fi
 
 ## source bash_aliases
 if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+    source ~/.bash_aliases
 fi
 
 ## i want a beautiful prompt
@@ -54,14 +49,7 @@ export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-
-
-##  OSX SLICE
-##############################################################################
-
-## TODO: MOVE THIS IN OSX SLICE !!!
-
-## brew installed bash-autocompletion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+## source bashrc_osx
+if [ -f ~/.bashrc_osx ]; then
+    source ~/.bashrc_osx
 fi
