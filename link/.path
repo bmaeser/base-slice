@@ -1,9 +1,0 @@
-## $HOME/bin should be on $PATH :)
-export PATH="~/bin:$PATH"
-
-
-
-### this moves into osx-slilce later!
-
-## homebrew binaries in $PATH
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
