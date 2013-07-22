@@ -24,9 +24,9 @@ fi
 
 
 ## i want a beautiful prompt
-if [ -f ~/.bash_prompt ]; then
-   source ~/.bash_prompt
-fi
+#if [ -f ~/.bash_prompt ]; then
+#   source ~/.bash_prompt
+#fi
 
 
 # Increase the maximum number of lines contained in the ~/.bash_history
