@@ -25,9 +25,9 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 ## i want a beautiful prompt
-#if [ -f ~/.bash_prompt ]; then
-#   source ~/.bash_prompt
-#fi
+if [ -f ~/.bash_prompt ]; then
+   source ~/.bash_prompt
+fi
 
 # don't put duplicate lines in the history.
 # ... or force ignoredups and ignorespace
@@ -43,7 +43,7 @@ export HISTFILESIZE=10000
 # (default is 500)
 export HISTSIZE=2000000
 # Make some commands not show up in history
-export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+#export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
