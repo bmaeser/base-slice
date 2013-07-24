@@ -33,6 +33,9 @@ alias v='vim'
 alias md='mkdir -p'
 alias rd='rmdir'
 
+# beautiful tree
+alias tr="tree -a -I '*git"
+
 
 ## source aliases_osx
 if [ -f ~/.aliases_osx ]; then
