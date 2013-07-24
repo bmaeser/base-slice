@@ -14,6 +14,22 @@ alias .....='cd ../../../..'
 alias ~='cd ~'
 alias -- -='cd -'
 
+## better directoy listing:
+alias sl='ls'
+alias ll='ls -l'
+alias la='ls -la'
+alias lh='ls -lh'
+alias lah='ls -lah'
+# List only directories
+alias lsd='ls -l | grep "^d"'
+
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+	alias ls='ls --color'
+else # BSD (OS X default) `ls`
+	alias ls='ls -G'
+fi
+
 # pushd and popd
 alias pu='pushd'
 alias po='popd'

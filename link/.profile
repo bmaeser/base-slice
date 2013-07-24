@@ -19,28 +19,9 @@ if [ -f ~/.aliases ]; then
    source ~/.aliases
 fi
 
-# colored grep
-export GREP_OPTIONS='--color=auto'
-export GREP_COLOR='1;32'
-
-# Detect which `ls` flavor is in use
-#if ls --color > /dev/null 2>&1; then # GNU `ls`
-#	colorflag="--color"
-#else # OS X `ls`
-#	colorflag="-G"
-#fi
-
-## better directoy listing:
-alias sl='ls'
-alias ll='ls -l'
-alias la='ls -la'
-alias lh='ls -lh'
-alias lah='ls -lah'
-# List only directories
-alias lsd='ls -l | grep "^d"'
 
 
-export LSCOLORS='Gxfxcxdxdxegedabagacad'
+#export LSCOLORS='Gxfxcxdxdxegedabagacad'
 
 ##  virtualenvwrapper
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
