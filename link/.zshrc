@@ -28,3 +28,7 @@ done
 
 
 
+## todo: save iterm2 prefs
+# ~/Library/Preferences/com.googlecode.iterm2.plist
+
+## dotpy: unterschied zwischen deeplinking und normalem linken!
